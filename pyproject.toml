@@ -1,16 +1,19 @@
 [tool.poetry]
 name = "dependabot-poetry-extras"
 version = "0.1.0"
-description = "Demo dependabot error when extras are specified in pyproject.toml"
-authors = ["Alex Kerney <abk@mac.com>"]
+description = ""
+authors = ["Your Name <you@example.com>"]
 license = "MIT"
+readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.7"
-celery = {version = "^4.3", extras = ["redis"]}
-[tool.poetry.dev-dependencies]
-ipython = "^7.5"
+python = "^3.11"
+celery = {version = "^5.5.3", extras = ["redis"]}
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^9.4.0"
 
 [build-system]
-requires = ["poetry>=0.12"]
-build-backend = "poetry.masonry.api"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
