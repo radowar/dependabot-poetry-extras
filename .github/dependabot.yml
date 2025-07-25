@@ -1,0 +1,6 @@
+version: 2
+updates:
+  - package-ecosystem: "pip" # pip should be set for poetry package-manager
+    directory: "/"
+    schedule:
+      interval: "daily"
